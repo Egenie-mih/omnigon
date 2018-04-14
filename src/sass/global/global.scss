@@ -1,0 +1,19 @@
+html
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    font-family: $font;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    font-weight: 400;
+
+    min-width: 320px;
+    height: 100%;
+    margin: 0;
+
+    background-color: $bg-white;
+}

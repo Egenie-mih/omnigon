@@ -1,0 +1,13 @@
+// COMMON
+@import 'global/normalize.scss';
+@import 'global/fonts.scss';
+
+@import 'variables.scss';
+@import 'mixin.scss';
+
+@import 'global/global.scss';
+
+// INCLUDES
+@import 'blocks/header/header';
+@import 'blocks/footer/footer';
+@import 'blocks/index/index-main';
