@@ -1,0 +1,29 @@
+.content
+{
+    width: calc(100%-64px);
+    margin: 32px;
+    margin-top: 96px;
+
+    border-radius: 8px;
+    background-color: rgba($bg-white, .9);
+    box-shadow: 0 32px 64px 0 rgba(0,0,0,.05);
+
+    @media #{$desktop-widths}
+    {
+        min-width: 772px;
+        margin-top: 32px;
+
+        flex: 1 1 772px;
+    }
+    @media #{$medium-desktop-widths}
+    {
+        flex: 1 1 888px;
+    }
+    @media #{$maximum-desktop-widths}
+    {
+        width: 952px;
+        max-width: 952px;
+
+        flex: 0 0 952px;
+    }
+}

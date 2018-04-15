@@ -1,0 +1,62 @@
+.menu
+  header.menu__header
+    button.menu__trigger.js-trigger(type="button" aria-label="Показать/скрыть меню")
+      +use("menu")(width="24" height="24")
+    a.logo(href="http://www.omnigon.com/en") Omnigon
+  .menu__vote.js-menu-dropdown
+    button.button.menu__vote-button(type="button") New vote
+    .menu__vote-block
+      span.menu__vote-title Draft
+      ul.menu__vote-list
+        li.menu__vote-item.menu__vote-item--active
+          a(href="#").menu__vote-link
+            .menu__vote-image
+            span.menu__vote-name New vote
+        li.menu__vote-item
+          a(href="#").menu__vote-link
+            .menu__vote-image
+              picture
+                img(src="img/vote/image1.png" srcset="img/vote/image1@2x.png 2x" width="48" height="48" alt="vote-image")
+            span.menu__vote-name Serie A Footballer of the Year
+    .menu__vote-block
+      span.menu__vote-title Active
+      ul.menu__vote-list
+        li.menu__vote-item
+          a(href="#").menu__vote-link
+            .menu__vote-image
+              picture
+                img(src="img/vote/image2.png" srcset="img/vote/image2@2x.png 2x" width="48" height="48" alt="vote-image")
+            span.menu__vote-name Unleash a Jaguar
+        li.menu__vote-item
+          a(href="#").menu__vote-link
+            .menu__vote-image
+              picture
+                img(src="img/vote/image3.png" srcset="img/vote/image3@2x.png 2x" width="48" height="48" alt="vote-image")
+            span.menu__vote-name Choose best Wimbledon player and win tickets to the finals
+        li.menu__vote-item
+          a(href="#").menu__vote-link
+            .menu__vote-image
+              picture
+                img(src="img/vote/image4.png" srcset="img/vote/image4@2x.png 2x" width="48" height="48" alt="vote-image")
+            span.menu__vote-name 2015 Music Moments
+    .menu__vote-block
+      span.menu__vote-title Closed
+      ul.menu__vote-list
+        li.menu__vote-item
+          a(href="#").menu__vote-link
+            .menu__vote-image
+              picture
+                img(src="img/vote/image5.png" srcset="img/vote/image5@2x.png 2x" width="48" height="48" alt="vote-image")
+            span.menu__vote-name All time greats
+        li.menu__vote-item
+          a(href="#").menu__vote-link
+            .menu__vote-image
+              picture
+                img(src="img/vote/image6.png" srcset="img/vote/image6@2x.png 2x" width="48" height="48" alt="vote-image")
+            span.menu__vote-name Insane Dunks
+        li.menu__vote-item
+          a(href="#").menu__vote-link
+            .menu__vote-image
+              picture
+                img(src="img/vote/image7.png" srcset="img/vote/image7@2x.png 2x" width="48" height="48" alt="vote-image")
+            span.menu__vote-name 2014 Music Moments

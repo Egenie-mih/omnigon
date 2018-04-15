@@ -1,14 +1,23 @@
 // POINTS
 $mobile-widths-only: '(max-width: 767px)';
 $tablet-widths: '(min-width: 768px)';
-$desktop-widths: '(min-width: 1150px)';
+$desktop-widths: '(min-width: 1156px)';
+$medium-desktop-widths: '(min-width: 1360px)';
+$maximum-desktop-widths: '(min-width: 1600px)';
 
 // FONTS
-$font: 'font', 'Arial', sans-serif;
+$font-roboto: 'Roboto', 'Arial', sans-serif;
 
 // FONT COLORS
 $font-white: #fff;
 $font-black: #000;
+$font-dark-gray: #303030;
+$font-green: #26bf8c;
 
 // BACKGROUND COLORS
 $bg-white: #fff;
+$bg-light-grey: #fafafa;
+$bg-grey: #eee;
+$bg-dark-grey: #303030;
+$bg-yellow: #ffd840;
+$bg-black: #000;

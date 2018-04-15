@@ -1,0 +1,144 @@
+mixin players(data)
+  .players
+    .players__notification
+      p.players__notification-text Embed at least 2 players
+    .players__list
+      each item in data
+        if (item.name.length)
+          article.players__item.players__item--chosen(id='players-' + item.index)
+            figure
+              a(href="#").players__link
+                .players__image
+                  if (item.image.length)
+                    picture
+                      img(src='img/players/'+item.image+'.jpg' srcset='img/players/'+item.image+'@2x.jpg 2x' width="164" height="164" alt=item.name)
+              figcaption.players__name #{item.name}
+
+        else
+          article.players__item(id='players-' + item.index)
+            a(href="#").players__link
+              .players__image
+                +use("plus")(width="16" height="16")
+
++players([
+   {
+      "index": "0",
+      "name": "DeMar DeRozan",
+      "image": "derozan",
+  },
+  {
+      "index": "1",
+      "name": "Stephen Curry",
+      "image": "curry",
+  },
+  {
+      "index": "2",
+      "name": "Kevin Durant",
+      "image": "durant",
+  },
+  {
+      "index": "3",
+      "name": "James Harden",
+      "image": "harden",
+  },
+  {
+      "index": "4",
+      "name": "DeAndre Jordan",
+      "image": "jordan",
+  },
+  {
+      "index": "5",
+      "name": "Russell Westbrook",
+      "image": "westbrook",
+  },
+  {
+      "index": "6",
+      "name": "Chandler Parsons",
+      "image": "parsons",
+  },
+  {
+      "index": "7",
+      "name": "Kenneth Faried",
+      "image": "faried",
+  },
+  {
+      "index": "8",
+      "name": "Gordon Hayward",
+      "image": "Hayward",
+  },
+  {
+      "index": "9",
+      "name": "Mike Conley",
+      "image": "conley",
+  },
+  {
+      "index": "10",
+      "name": "Dwight Howard",
+      "image": "howard",
+  },
+  {
+      "index": "11",
+      "name": "Trey Burke",
+      "image": "",
+  },
+  {
+      "index": "12",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "13",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "14",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "15",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "16",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "17",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "18",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "19",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "20",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "21",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "22",
+      "name": "",
+      "image": ""
+  },
+  {
+      "index": "23",
+      "name": "",
+      "image": ""
+  }
+])

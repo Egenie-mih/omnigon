@@ -1,1 +1,14 @@
-
+.index-page
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    flex-direction: column;
+}
+@media #{$desktop-widths}
+{
+    .index-page
+    {
+        flex-direction: row;
+    }
+}

@@ -2,11 +2,13 @@ doctype html
 html(lang='ru')
     head
         meta(charset='UTF-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui')
         meta(http-equiv='X-UA-Compatible' content='IE=edge')
-        block title 
+        block title
             title Title
         link(href='css/style.min.css', rel='stylesheet' type='text/css')
-
+        script(src="js/picturefill.min.js" async)
+        script
+          include ../js/picturefill.init.js
     body
         block content

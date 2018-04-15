@@ -18,6 +18,7 @@ var csscomb = require('gulp-csscomb');
 var rename = require('gulp-rename');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
+var imagemin = require("gulp-imagemin");
 var browserSync = require('browser-sync').create();
 var nib = require('nib');
 
@@ -119,4 +120,23 @@ gulp.task('js', function () {
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('default', gulp.series('pug', 'style', 'js', 'copy', 'watch'));
+gulp.task('images', function() {
+  return gulp.src('build/img/**/*.{png, jpg, gif}')
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true})
+  ]))
+  .pipe(gulp.dest('build/img'));
+});
+
+gulp.task('symbols', function() {
+  return gulp.src('build/img/icons/*.svg')
+  .pipe(svgmin())
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename('symbols.svg'))
+  .pipe(gulp.dest('build/img'));
+});
+
+gulp.task('default', gulp.series('images', 'symbols', 'pug', 'style', 'js', 'copy', 'watch'));

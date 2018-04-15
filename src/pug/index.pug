@@ -1,17 +1,24 @@
 extends template
 
 block title
-    title
+    title OMNIGON
 
 block content
+    include mixins/svg
+
+
     // Header
     include header/header
 
     // Index main content
     main.index-page
+      include menu/menu
+      section.content
+        include tabs/tabs--players
+        include filter/filter
+        include players/players
 
     // Footer
     include footer/footer
 
-    script
-      //- include ../js/main.min.js
+    script(src='js/main.min.js')
