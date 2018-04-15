@@ -640,7 +640,7 @@ body
     top: 64px;
     left: -100%;
 
-    overflow: auto;
+    overflow-y: auto;
 
     width: 100%;
     min-width: 270px;
@@ -1226,6 +1226,8 @@ body
     .menu
     {
         width: 320px;
+
+        background-color: #303030;
     }
     .menu__header
     {
