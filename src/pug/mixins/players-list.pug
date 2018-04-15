@@ -1,0 +1,16 @@
+mixin players-list(data)
+  .players__list
+    each item in data
+      if (item.name.length)
+        article.players__item.players__item--chosen
+          a(href="#").players__link
+            .players__image
+              if (item.image.length)
+                picture
+                  img(src='img/players/'+item.image+'.jpg' srcset='img/players/'+item.image+'@2x.jpg 2x' width="164" height="164" alt=item.name)
+            h2.players__name #{item.name}
+      else
+        article.players__item
+          a(href="#").players__link
+            .players__image
+              +svg-use("plus")(width="16" height="16")

@@ -1,12 +1,12 @@
 .content
 {
-    width: calc(100%-64px);
+    width: calc(100% - 64px);
     margin: 32px;
     margin-top: 96px;
 
     border-radius: 8px;
     background-color: rgba($bg-white, .9);
-    box-shadow: 0 32px 64px 0 rgba(0,0,0,.05);
+    box-shadow: 0 32px 64px 0 rgba($bg-black, .05);
 
     @media #{$desktop-widths}
     {

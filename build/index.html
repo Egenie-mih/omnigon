@@ -16,12 +16,11 @@
     </script>
   </head>
   <body>
-    <!-- Header-->
     <!-- Index main content-->
-    <main class="index-page">
+    <div class="index-page">
       <div class="menu">
         <header class="menu__header">
-          <button class="menu__trigger js-trigger" type="button" aria-label="Показать/скрыть меню">
+          <button class="menu__trigger js-trigger" type="button" aria-label="Show or hide menu">
                 <svg width="24" height="24">
                   <use xlink:href="img/symbols.svg#menu"></use>
                 </svg>
@@ -73,7 +72,8 @@
           </div>
         </div>
       </div>
-      <section class="content">
+      <main class="content">
+        <h1 class="visually-hidden">Voting for players</h1>
         <div class="tabs">
           <ul class="tabs__list">
             <li class="tabs__item"><a class="tabs__link" href="#">Detail</a></li>
@@ -83,190 +83,153 @@
             <li class="tabs__item"><a class="tabs__link" href="#">Look and feel</a></li>
           </ul>
         </div>
-        <div class="filter">
+        <form class="filter" action="#" method="GET">
           <div class="switcher">
             <p class="switcher__description" id="descriptionSwitch">Present in random order</p>
-            <input type="checkbox" name="random" id="random-oder" aria-describedby="descriptionSwitch" checked>
+            <input type="checkbox" name="random-oder" id="random-oder" aria-describedby="descriptionSwitch" checked>
             <label class="switcher__label" for="random-oder"><span class="switcher__circle" tabindex="0"></span></label>
           </div>
-        </div>
-                <div class="players">
-                  <div class="players__notification">
-                    <p class="players__notification-text">Embed at least 2 players</p>
-                  </div>
-                  <div class="players__list">
-                    <article class="players__item players__item--chosen" id="players-0">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/derozan.jpg" srcset="img/players/derozan@2x.jpg 2x" width="164" height="164" alt="DeMar DeRozan"></picture>
-                          </div></a>
-                        <figcaption class="players__name">DeMar DeRozan</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-1">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/curry.jpg" srcset="img/players/curry@2x.jpg 2x" width="164" height="164" alt="Stephen Curry"></picture>
-                          </div></a>
-                        <figcaption class="players__name">Stephen Curry</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-2">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/durant.jpg" srcset="img/players/durant@2x.jpg 2x" width="164" height="164" alt="Kevin Durant"></picture>
-                          </div></a>
-                        <figcaption class="players__name">Kevin Durant</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-3">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/harden.jpg" srcset="img/players/harden@2x.jpg 2x" width="164" height="164" alt="James Harden"></picture>
-                          </div></a>
-                        <figcaption class="players__name">James Harden</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-4">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/jordan.jpg" srcset="img/players/jordan@2x.jpg 2x" width="164" height="164" alt="DeAndre Jordan"></picture>
-                          </div></a>
-                        <figcaption class="players__name">DeAndre Jordan</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-5">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/westbrook.jpg" srcset="img/players/westbrook@2x.jpg 2x" width="164" height="164" alt="Russell Westbrook"></picture>
-                          </div></a>
-                        <figcaption class="players__name">Russell Westbrook</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-6">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/parsons.jpg" srcset="img/players/parsons@2x.jpg 2x" width="164" height="164" alt="Chandler Parsons"></picture>
-                          </div></a>
-                        <figcaption class="players__name">Chandler Parsons</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-7">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/faried.jpg" srcset="img/players/faried@2x.jpg 2x" width="164" height="164" alt="Kenneth Faried"></picture>
-                          </div></a>
-                        <figcaption class="players__name">Kenneth Faried</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-8">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/hayward.jpg" srcset="img/players/hayward@2x.jpg 2x" width="164" height="164" alt="Gordon Hayward"></picture>
-                          </div></a>
-                        <figcaption class="players__name">Gordon Hayward</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-9">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/conley.jpg" srcset="img/players/conley@2x.jpg 2x" width="164" height="164" alt="Mike Conley"></picture>
-                          </div></a>
-                        <figcaption class="players__name">Mike Conley</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-10">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                            <picture><img src="img/players/howard.jpg" srcset="img/players/howard@2x.jpg 2x" width="164" height="164" alt="Dwight Howard"></picture>
-                          </div></a>
-                        <figcaption class="players__name">Dwight Howard</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item players__item--chosen" id="players-11">
-                      <figure><a class="players__link" href="#">
-                          <div class="players__image">
-                          </div></a>
-                        <figcaption class="players__name">Trey Burke</figcaption>
-                      </figure>
-                    </article>
-                    <article class="players__item" id="players-12"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-13"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-14"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-15"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-16"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-17"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-18"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-19"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-20"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-21"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-22"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                    <article class="players__item" id="players-23"><a class="players__link" href="#">
-                        <div class="players__image">
-                              <svg width="16" height="16">
-                                <use xlink:href="img/symbols.svg#plus"></use>
-                              </svg>
-                        </div></a></article>
-                  </div>
-                </div>
-      </section>
-    </main>
-    <!-- Footer-->
+        </form>
+        <section class="players">
+          <div class="players__notification">
+            <p class="players__notification-text players__notification-text--success">Embed at least 2 players</p>
+          </div>
+              <div class="players__list">
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/derozan.jpg" srcset="img/players/derozan@2x.jpg 2x" width="164" height="164" alt="DeMar DeRozan"></picture>
+                    </div>
+                    <h2 class="players__name">DeMar DeRozan</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/curry.jpg" srcset="img/players/curry@2x.jpg 2x" width="164" height="164" alt="Stephen Curry"></picture>
+                    </div>
+                    <h2 class="players__name">Stephen Curry</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/durant.jpg" srcset="img/players/durant@2x.jpg 2x" width="164" height="164" alt="Kevin Durant"></picture>
+                    </div>
+                    <h2 class="players__name">Kevin Durant</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/harden.jpg" srcset="img/players/harden@2x.jpg 2x" width="164" height="164" alt="James Harden"></picture>
+                    </div>
+                    <h2 class="players__name">James Harden</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/jordan.jpg" srcset="img/players/jordan@2x.jpg 2x" width="164" height="164" alt="DeAndre Jordan"></picture>
+                    </div>
+                    <h2 class="players__name">DeAndre Jordan</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/westbrook.jpg" srcset="img/players/westbrook@2x.jpg 2x" width="164" height="164" alt="Russell Westbrook"></picture>
+                    </div>
+                    <h2 class="players__name">Russell Westbrook</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/parsons.jpg" srcset="img/players/parsons@2x.jpg 2x" width="164" height="164" alt="Chandler Parsons"></picture>
+                    </div>
+                    <h2 class="players__name">Chandler Parsons</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/faried.jpg" srcset="img/players/faried@2x.jpg 2x" width="164" height="164" alt="Kenneth Faried"></picture>
+                    </div>
+                    <h2 class="players__name">Kenneth Faried</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/hayward.jpg" srcset="img/players/hayward@2x.jpg 2x" width="164" height="164" alt="Gordon Hayward"></picture>
+                    </div>
+                    <h2 class="players__name">Gordon Hayward</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/conley.jpg" srcset="img/players/conley@2x.jpg 2x" width="164" height="164" alt="Mike Conley"></picture>
+                    </div>
+                    <h2 class="players__name">Mike Conley</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                      <picture><img src="img/players/howard.jpg" srcset="img/players/howard@2x.jpg 2x" width="164" height="164" alt="Dwight Howard"></picture>
+                    </div>
+                    <h2 class="players__name">Dwight Howard</h2></a></article>
+                <article class="players__item players__item--chosen"><a class="players__link" href="#">
+                    <div class="players__image">
+                    </div>
+                    <h2 class="players__name">Trey Burke</h2></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+                <article class="players__item"><a class="players__link" href="#">
+                    <div class="players__image">
+                          <svg width="16" height="16">
+                            <use xlink:href="img/symbols.svg#plus"></use>
+                          </svg>
+                    </div></a></article>
+              </div>
+        </section>
+      </main>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>

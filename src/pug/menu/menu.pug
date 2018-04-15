@@ -1,10 +1,10 @@
 .menu
   header.menu__header
-    button.menu__trigger.js-trigger(type="button" aria-label="Показать/скрыть меню")
-      +use("menu")(width="24" height="24")
-    a.logo(href="http://www.omnigon.com/en") Omnigon
+    button(type="button" aria-label="Show or hide menu").menu__trigger.js-trigger
+      +svg-use("menu")(width="24" height="24")
+    a(href="http://www.omnigon.com/en").logo Omnigon
   .menu__vote.js-menu-dropdown
-    button.button.menu__vote-button(type="button") New vote
+    button(type="button").button.menu__vote-button New vote
     .menu__vote-block
       span.menu__vote-title Draft
       ul.menu__vote-list

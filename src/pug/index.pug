@@ -4,21 +4,16 @@ block title
     title OMNIGON
 
 block content
-    include mixins/svg
-
-
-    // Header
-    include header/header
+    include mixins/svg-use
+    include mixins/players-list
 
     // Index main content
-    main.index-page
+    .index-page
       include menu/menu
-      section.content
+      main.content
+        h1.visually-hidden Voting for players
         include tabs/tabs--players
         include filter/filter
         include players/players
-
-    // Footer
-    include footer/footer
 
     script(src='js/main.min.js')

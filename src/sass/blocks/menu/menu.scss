@@ -76,7 +76,7 @@
     border: 0;
     border-radius: 4px;
     background-color: rgba($bg-white, .95);
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, .2), 0 1px 2px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1px 0 rgba($bg-black, .2), 0 1px 2px 0 rgba($bg-black, .1);
     &:hover
     {
         background-color: rgba($bg-white, .7);
@@ -121,6 +121,10 @@
                 background: $bg-yellow;
             }
         }
+        & .menu__vote-image
+        {
+            background-color: rgba($bg-white, .6);
+        }
     }
 }
 .menu__vote-link
@@ -149,7 +153,6 @@
     margin-right: 16px;
 
     border-radius: 50%;
-    background-color: rgba($bg-white, .6);
     & img
     {
         width: 100%;
@@ -176,6 +179,7 @@
     .menu
     {
         width: 320px;
+
         background-color: $bg-dark-grey;
     }
     .menu__header
