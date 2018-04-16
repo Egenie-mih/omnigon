@@ -6,4 +6,4 @@
   Run `$gulp`.
 ```
 
-[Ссылка](https://egenie-mih.github.io/omnigon-test/build/index.html) на проект
+[Ссылка](https://egenie-mih.github.io/omnigon/build/index.html) на проект
