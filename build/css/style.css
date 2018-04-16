@@ -1068,13 +1068,21 @@ body
 
 .players__item
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 180px;
     margin-bottom: 11px;
     padding: 0 8px;
 
-    text-align: center;
+    text-align: center; 
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 .players__item figure
 {
@@ -1098,9 +1106,6 @@ body
 {
     display: inline-block;
 
-    width: 100%;
-    margin-bottom: 5px;
-
     text-decoration: none;
 }
 .players__link:hover .players__image:after
@@ -1123,6 +1128,7 @@ body
 
     width: 164px;
     height: 164px;
+    margin-bottom: 5px; 
 
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .05);
@@ -1208,6 +1214,7 @@ body
     font-weight: 400;
     line-height: 1.71;
 
+    width: 164px;
     min-height: 23px;
     margin: 0;
 
@@ -1259,6 +1266,26 @@ body
 
 @media (min-width: 1004px)
 {
+    .players__link
+    {
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display:     flex;
+            flex-direction: column;
+
+        width: auto;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
     .players__item
     {
         width: 25%;
@@ -1372,6 +1399,10 @@ body
     {
         width: 25%;
     }
+    .players__name
+    {
+        width: 148px;
+    }
     .players__image
     {
         width: 148px;
@@ -1412,6 +1443,10 @@ body
     .players__item
     {
         width: 25%;
+    }
+    .players__name
+    {
+        width: 164px;
     }
     .players__image
     {
